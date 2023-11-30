@@ -1,6 +1,4 @@
 import style from './optionbanner.module.css'
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 import {useContext, useState} from "react";
 import OptionContext from "../../../context/OptionContext";
