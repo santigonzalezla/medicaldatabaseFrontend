@@ -8,3 +8,8 @@
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
+
+:global
+{
+    @import 'node_modules/slick-carousel/slick/slick';
+}
