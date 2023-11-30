@@ -53,26 +53,31 @@ const BarContainer = ({ option, setOpen, info, action }) =>
                 case "provider":
                     setOpen(prev => !prev);
                     alert("Proveedor creado");
+                    clearInputs();
                     await postData(provider);
                     break;
                 case "product":
                     setOpen(prev => !prev);
-                    alert("Producto creado")
+                    alert("Producto creado");
+                    clearInputs();
                     await postData(product);
                     break;
                 case "inventory":
                     setOpen(prev => !prev);
-                    alert("Inventario creado")
+                    alert("Inventario creado");
+                    clearInputs();
                     await postData(inventory);
                     break;
                 case "purchaseOrder":
                     setOpen(prev => !prev);
-                    alert("Orden de compra creada")
+                    alert("Orden de compra creada");
+                    clearInputs();
                     await postData(purchaseOrder);
                     break;
                 case "dataSecurity":
                     setOpen(prev => !prev);
-                    alert("Registro de seguridad creado")
+                    alert("Registro de seguridad creado");
+                    clearInputs();
                     await postData(dataSecurity);
                     break;
                 default:
@@ -85,33 +90,77 @@ const BarContainer = ({ option, setOpen, info, action }) =>
             {
                 case "provider":
                     setOpen(prev => !prev);
-                    alert("Proveedor actualizado")
+                    alert("Proveedor actualizado");
+                    clearInputs();
                     await putData(provider, info._id);
                     break;
                 case "product":
                     setOpen(prev => !prev);
-                    alert("Producto actualizado")
+                    alert("Producto actualizado");
+                    clearInputs();
                     await putData(product, info._id);
                     break;
                 case "inventory":
                     setOpen(prev => !prev);
-                    alert("Inventario actualizado")
+                    alert("Inventario actualizado");
+                    clearInputs();
                     await putData(inventory, info._id);
                     break;
                 case "purchaseOrder":
                     setOpen(prev => !prev);
-                    alert("Orden de compra actualizada")
+                    alert("Orden de compra actualizada");
+                    clearInputs();
                     await putData(purchaseOrder, info._id);
                     break;
                 case "dataSecurity":
                     setOpen(prev => !prev);
-                    alert("Registro de seguridad actualizado")
+                    alert("Registro de seguridad actualizado");
+                    clearInputs();
                     await putData(dataSecurity, info._id);
                     break;
                 default:
                     break;
             }
         }
+    }
+
+    const clearInputs = () =>
+    {
+        setProvider({
+            providerId: '',
+            name: '',
+            phone: '',
+            address: '',
+        });
+
+        setProduct({
+            productId: '',
+            providerId: '',
+            name: '',
+            type: '',
+            dueDate: '',
+        });
+
+        setInventory({
+            inventoryId: '',
+            productId: '',
+            quantity: '',
+        });
+
+        setPurchaseOrder({
+            orderId: '',
+            providerId: '',
+            state: '',
+            date: '',
+        });
+
+        setDataSecurity({
+            registerId: '',
+            type: '',
+            employeeId: '',
+            description: '',
+            dateTime: '',
+        });
     }
 
     return (
