@@ -1,0 +1,23 @@
+.Home
+{
+
+}
+
+.HomeBack
+{
+    position: absolute;
+    height: 325px;
+    width: 100%;
+    background: #000034;
+    border-radius: 0 0 125px 125px;
+    z-index: -1;
+}
+
+.HomeContainer
+{
+    padding: 50px 100px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}

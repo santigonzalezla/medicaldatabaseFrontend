@@ -1,0 +1,42 @@
+.List
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.List h2
+{
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFF;
+    align-self: flex-start;
+}
+
+.ListTop
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.ListTop button
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    background-color: #5ACE9F;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFF;
+    cursor: pointer;
+}

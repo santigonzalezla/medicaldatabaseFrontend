@@ -1,0 +1,36 @@
+.OptionBanner
+{
+    background: #111241;
+    padding: 15px 45px;
+    border-radius: 50px;
+}
+
+.OptionButton
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+    background: transparent;
+    border-radius: 50px;
+    color: #FFF;
+    border: 2px solid #FFF;
+    cursor: pointer;
+    width: 90%;
+    font-weight: 500;
+}
+
+.OptionBannerTab
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.SelectedOption
+{
+    background-color: #FFF;
+    color: #111241;
+    font-weight: 600;
+}

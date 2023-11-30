@@ -1,0 +1,76 @@
+.CloseModal
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Asegúrate de que el overlay esté en la parte superior */
+}
+
+.Overlay
+{
+    position: relative;
+    border-radius: 20px;
+    width: 60%;
+    background-color: white; /* Puedes ajustar el color de fondo según tus preferencias */
+    padding: 80px 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.Buttons
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 20px;
+}
+
+.Buttons button
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 175px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.Accept
+{
+    background-color: #5ACE9F;
+}
+
+.Decline
+{
+    background-color: #E03333;
+}
+
+.Delete
+{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Delete svg:hover
+{
+    stroke: #E03333;
+}

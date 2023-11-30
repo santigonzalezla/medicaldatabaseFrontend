@@ -1,0 +1,13 @@
+.Navbar
+{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.Navbar h1
+{
+    font-size: 40px;
+    font-weight: 700;
+    color: #FFF;
+}

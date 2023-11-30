@@ -1,0 +1,94 @@
+.InfoCard
+{
+    width: 100%;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    position: relative;
+    padding-right: 60px;
+}
+
+.InfoContainer
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-left: 30px;
+}
+
+.InfoStatus
+{
+    height: 125px;
+    left: 0;
+    background: #478FDB;
+    width: 7px;
+    border-radius: 10px 0 0 10px;
+}
+
+.InfoContent
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.InfoDisplay
+{
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    gap: 70px;
+}
+
+.InfoDisplayText
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.InfoDisplayText h4
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.InfoDisplayText span
+{
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.InfoButton
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px
+}
+
+.Edit,
+.Delete
+{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Edit svg:hover
+{
+    stroke: #64E033;
+}
+
+.Delete svg:hover
+{
+    stroke: #E03333;
+}
