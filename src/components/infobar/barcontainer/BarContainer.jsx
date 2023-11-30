@@ -4,7 +4,7 @@ import useFetch from "../../../hooks/useFetch";
 
 const BarContainer = ({ option, setOpen, info, action }) =>
 {
-    const { postData, putData } = useFetch(`/${option}`);
+    const { postData, putData } = useFetch(`https://medicaldatabase.onrender.com/api/${option}`);
 
     const [provider, setProvider] = useState({
         providerId: info.providerId,

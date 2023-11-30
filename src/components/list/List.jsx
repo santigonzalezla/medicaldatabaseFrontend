@@ -7,7 +7,7 @@ import useFetch from "../../hooks/useFetch";
 const List = ({ setOpen, setInfo }) =>
 {
     const optionContext = useContext(OptionContext);
-    const { data, loading } = useFetch(`/${optionContext.option}`);
+    const { data, loading } = useFetch(`https://medicaldatabase.onrender.com/api/${optionContext.option}`);
 
     const handleCreate = () =>
     {

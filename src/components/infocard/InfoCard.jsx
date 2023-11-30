@@ -6,7 +6,7 @@ import {useState} from "react";
 
 const InfoCard = ({ type, info, setOpen, setInfo, setAction }) =>
 {
-    const { deleteData } = useFetch(`/${type}`);
+    const { deleteData } = useFetch(`https://medicaldatabase.onrender.com/api/${type}`);
     const [active, setActive] = useState(false);
 
     const handleEdit = () =>
